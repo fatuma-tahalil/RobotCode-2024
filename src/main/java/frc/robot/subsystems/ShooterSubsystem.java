@@ -7,13 +7,12 @@ import com.revrobotics.CANSparkLowLevel.MotorType;
 import com.revrobotics.CANSparkMax;
 
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import frc.robot.Constants.shooterConstants;
+import frc.robot.Constants.shooterConstants; 
 
 public class ShooterSubsystem extends SubsystemBase {
-  private final CANSparkMax shooterUpMotor;
-  private final CANSparkMax shooterDownMotor;
-
-  public ShooterSubsystem() {
+  private final CANSparkMax shooterUpMotor, shooterDownMotor;  //Defining two variables of the same type like this is good practice. Please use this instead of using line breaks and repeating the type!
+  
+  public ShooterSubsystem() {  
     shooterUpMotor = new CANSparkMax(shooterConstants.shooterUpDeviceID, MotorType.kBrushed);
     shooterDownMotor = new CANSparkMax(shooterConstants.shooterDownDeviceID, MotorType.kBrushed);
 
