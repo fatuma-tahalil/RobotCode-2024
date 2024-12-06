@@ -35,7 +35,9 @@ public final class Constants {
   }
 
   public static class intakeConstants{
-    public static int intakeID = 8;
+    public static int intakeDeviceID = 8; 
+    public static double intakeSpeed = 1.00; 
+    public static int intakeButton = 2; // PLACEHOLDER VALUE
   }
 
   public static class climberConstants{
@@ -50,5 +52,6 @@ public final class Constants {
     public static int shootButton = 1;
 
     public static double shooterSpeed = 1.00;
-  }
+  } 
+
 }
