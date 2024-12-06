@@ -14,10 +14,8 @@ import frc.robot.Constants;
 public class DrivetrainSubsystem extends SubsystemBase{
 
 
-  private final CANSparkMax rightUpMotor;
-  private final CANSparkMax rightDownMotor;
-  private final CANSparkMax leftUpMotor;
-  private final CANSparkMax leftDownMotor;
+  private final CANSparkMax rightUpMotor, rightDownMotor, leftUpMotor, leftDownMotor; //Defines all of them in one line instead of re-stating the type. Good practice
+
 
   private DifferentialDrive differentialDrive = null; 
 
