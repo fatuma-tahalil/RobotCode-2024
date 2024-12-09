@@ -21,11 +21,11 @@ public class IntakeCommand extends Command {
             m_IntakeSubsystem.intake();
         }
     } 
-    
+    @Override
     public void end(boolean interrupted) {
         m_IntakeSubsystem.stop();
     }
-
+    @Override
     public boolean isFinished() {
         return false;
     }
